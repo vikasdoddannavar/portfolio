@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Project Development &amp; Team Collaboration | Vikas Doddannavar</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+<nav class="nav container">
+<a class="logo" href="index.html">VD</a>
+<button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+
+<div class="nav-links">
+<a href="index.html">Home</a>
+<a href="about.html">About Me</a>
+<a href="skills.html">Skills</a>
+<a class="active" href="projects.html">Selected Projects</a>
+<a href="education.html">Education</a>
+<a href="achievements.html">Achievements</a>
+<a href="contact.html">Contact</a>
+</div>
+</nav>
+</header>
+
+<main>
+
+<section class="page-hero container">
+<p class="eyebrow">PROJECT 04</p>
+<h1>Project Development &amp; Team Collaboration</h1>
+</section>
+
+<section class="section container">
+
+<div class="project-detail-image">
+<img src="images/Project associates.jpg" alt="Project development team at the Idea Lab">
+</div>
+
+<div class="project-detail-content">
+
+<p>
+This project involved a hands-on engineering development session carried out in an <strong>Idea Lab</strong>.
+The work focused on practical implementation, experimentation, and understanding real-world engineering concepts.
+Our team worked together on hardware assembly, circuit connections, wiring, testing, and debugging.
+The experience helped us translate theoretical concepts into practical applications.
+Team collaboration improved our problem-solving, communication, and technical skills.
+The session provided valuable practical exposure to engineering tools, equipment, and systematic troubleshooting.
+</p>
+
+<div class="project-info">
+<div>
+<span class="eyebrow">CONTRIBUTORS</span>
+<p>Safi, Vikas Doddannavar, Shekhar, Manoranjan</p>
+</div>
+
+<div>
+<span class="eyebrow">GUIDED BY</span>
+<p>Ramesh Bommidi Sir</p>
+</div>
+</div>
+
+<p class="back-link">
+<a href="projects.html">← Back to Selected Projects</a>
+</p>
+
+</div>
+
+</section>
+
+</main>
+
+<footer>
+<div class="container footer">
+<strong>VD</strong>
+<span>© 2026 Vikas Doddannavar</span>
+</div>
+</footer>
+
+<script>
+const b=document.querySelector(".menu-toggle"),
+n=document.querySelector(".nav-links");
+if(b){
+b.addEventListener("click",()=>{
+const o=n.classList.toggle("open");
+b.setAttribute("aria-expanded",o);
+});
+n.querySelectorAll("a").forEach(a=>
+a.addEventListener("click",()=>n.classList.remove("open"))
+);
+}
+</script>
+
+</body>
+</html>
