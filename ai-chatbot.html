@@ -1,115 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xiaozhi AI Chatbot using ESP32 | Vikas Doddannavar</title>
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Chatbot | Vikas Doddannavar</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
 <header class="header">
-    <nav class="nav container">
-        <a class="logo" href="index.html">VD</a>
+<nav class="nav container">
+<a class="logo" href="index.html">VD</a>
+<button class="menu-toggle" aria-label="Open navigation">☰</button>
 
-        <button class="menu-toggle" aria-label="Open navigation">☰</button>
-
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="about.html">About Me</a>
-            <a href="skills.html">Skills</a>
-            <a class="active" href="projects.html">Selected Projects</a>
-            <a href="education.html">Education</a>
-            <a href="achievements.html">Achievements</a>
-            <a href="contact.html">Contact</a>
-        </div>
-    </nav>
+<div class="nav-links">
+<a href="index.html">Home</a>
+<a href="about.html">About Me</a>
+<a href="skills.html">Skills</a>
+<a class="active" href="projects.html">Selected Projects</a>
+<a href="education.html">Education</a>
+<a href="achievements.html">Achievements</a>
+<a href="contact.html">Contact</a>
+</div>
+</nav>
 </header>
 
 <main>
 
 <section class="page-hero container">
-    <p class="eyebrow">PROJECT 04</p>
+<p class="eyebrow">PROJECT 04</p>
 
-    <h1>Xiaozhi AI Chatbot<br>using ESP32.</h1>
+<h1>AI Chatbot</h1>
 
-    <p class="wide-text">
-        A hands-on AI chatbot project developed using an ESP32-based hardware
-        platform and the Xiaozhi AI system for interactive voice-based communication.
-    </p>
+<p class="wide-text">
+A voice-based AI chatbot developed using an ESP32 microcontroller and the Xiaozhi AI platform, enabling interactive communication through voice input and audio output.
+</p>
 </section>
 
 
 <section class="section container">
 
-    <div class="project-detail-image">
-        <div class="project-image placeholder">
-            PROJECT IMAGE<br>TO BE ADDED
-        </div>
-    </div>
+<div class="project-detail-image">
+<div class="project-image placeholder">
+PROJECT IMAGE<br>TO BE ADDED
+</div>
+</div>
 
 
-    <div class="project-detail-content">
+<div class="project-detail-content">
 
-        <h2>Overview</h2>
+<h2>Overview</h2>
 
-        <p>
-            The project involved developing an AI chatbot using an ESP32
-            microcontroller and the Xiaozhi AI platform. The system was designed
-            to provide an interactive voice-based interface for communication
-            with an AI assistant.
-        </p>
-
-        <h2>Hardware</h2>
-
-        <p>
-            The prototype used an ESP32 development board as the main
-            processing and communication controller. An I²S microphone was
-            used for voice input, while a speaker provided audio output.
-            An OLED display was also integrated to provide visual feedback
-            during interaction.
-        </p>
-
-        <h2>Working</h2>
-
-        <p>
-            The system captures the user's voice through the microphone,
-            processes the interaction through the Xiaozhi AI system, and
-            provides the response through the connected speaker. The OLED
-            display provides additional visual information during operation.
-        </p>
+<p>
+The project involved developing a compact AI chatbot using an ESP32-based
+hardware platform. The system was designed to provide interactive voice
+communication with an AI assistant through connected audio components.
+</p>
 
 
-        <div class="project-info">
+<h2>Procedure</h2>
 
-            <div>
-                <p class="eyebrow">PLATFORM</p>
-                <p>ESP32 & Xiaozhi AI</p>
-            </div>
+<p>
+The system captures the user's voice through an I²S microphone and processes
+the interaction through the Xiaozhi AI platform. The AI-generated response is
+then delivered through a connected speaker, while an OLED display provides
+visual feedback during operation.
+</p>
 
-            <div>
-                <p class="eyebrow">INPUT</p>
-                <p>I²S Microphone</p>
-            </div>
 
-            <div>
-                <p class="eyebrow">OUTPUT</p>
-                <p>Speaker & OLED Display</p>
-            </div>
+<div class="project-info">
 
-            <div>
-                <p class="eyebrow">FOCUS</p>
-                <p>AI-based voice interaction</p>
-            </div>
+<div>
+<p class="eyebrow">FOCUS</p>
+<p>AI-based voice interaction</p>
+</div>
 
-        </div>
+<div>
+<p class="eyebrow">SYSTEM</p>
+<p>ESP32-based chatbot</p>
+</div>
 
-    </div>
+<div>
+<p class="eyebrow">INPUT</p>
+<p>I²S microphone</p>
+</div>
 
-    <p class="back-link">
-        <a class="back" href="projects.html">← Back to Selected Projects</a>
-    </p>
+<div>
+<p class="eyebrow">OUTPUT</p>
+<p>Speaker and OLED display</p>
+</div>
+
+</div>
+
+</div>
+
+<p class="back-link">
+<a class="back" href="projects.html">← Back to Selected Projects</a>
+</p>
 
 </section>
 
@@ -117,24 +105,25 @@
 
 
 <footer>
-    <div class="container footer">
-        <strong>VD</strong>
-        <span>© 2026 Vikas Doddannavar</span>
-    </div>
+<div class="container footer">
+<strong>VD</strong>
+<span>© 2026 Vikas Doddannavar</span>
+</div>
 </footer>
+
 
 <script>
 const menuToggle = document.querySelector(".menu-toggle");
 const navLinks = document.querySelector(".nav-links");
 
 if (menuToggle && navLinks) {
-    menuToggle.addEventListener("click", () => {
-        navLinks.classList.toggle("open");
-        menuToggle.setAttribute(
-            "aria-expanded",
-            navLinks.classList.contains("open")
-        );
-    });
+menuToggle.addEventListener("click", () => {
+navLinks.classList.toggle("open");
+menuToggle.setAttribute(
+"aria-expanded",
+navLinks.classList.contains("open")
+);
+});
 }
 </script>
 
