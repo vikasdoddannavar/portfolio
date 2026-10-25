@@ -23,7 +23,7 @@ body{overflow-x:hidden}
 .menu-toggle{display:none;border:1px solid #ddd;background:#fff;color:#151515;font-size:22px;line-height:1;padding:8px 11px;cursor:pointer;border-radius:6px}
 .hero{width:min(1120px,90%);grid-template-columns:minmax(0,1.25fr) minmax(280px,.75fr)}
 .hero h1{overflow-wrap:anywhere}
-.project-image img{object-fit:cover}
+.project-image img{object-fit:contain}
 .project-gallery img{object-fit:cover}
 
 /* Tablet */
